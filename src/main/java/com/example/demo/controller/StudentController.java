@@ -15,7 +15,7 @@ public class StudentController {
         this.studentJdbc = studentJdbc;
     }
 
-    @PostMapping("/students")
+    @PostMapping("/students/")
     int newStudent(@RequestBody Student newStudent) {
         try {
             return studentJdbc.UpdateStudent(newStudent);
